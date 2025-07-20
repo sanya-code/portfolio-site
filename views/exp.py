@@ -1,8 +1,9 @@
 import streamlit as st 
 
-st.title("Experience",anchor=False)
+st.title("📈 Experience",anchor=False)
 
 st.markdown("#### Some ***'real-world'*** work experience")
+st.divider()
 
 # 🔷 MedTourEasy
 

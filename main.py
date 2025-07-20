@@ -8,7 +8,11 @@ about_page = st.Page(
     icon="🎀"
     
 )
-
+projects_page = st.Page(
+    page="views/projects.py",
+    title="Projects",
+    icon="📂"
+)
 
 writing_page = st.Page(
     page="views/my_work.py",
@@ -33,7 +37,7 @@ resume_page = st.Page(
 
 pg = st.navigation(
     {
-        "Info":[about_page,experience_page,resume_page],
+        "Info":[about_page,experience_page,resume_page,projects_page],
         "More than Just Tech":[writing_page, design_page]
     }
     

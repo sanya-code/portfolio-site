@@ -34,25 +34,22 @@ with col2:
 
     linkedin_url = "https://www.linkedin.com/in/sanya-sharma-866805242/"  # Replace with your actual LinkedIn URL
 
-    
-    st.markdown("""
-        <a href="https://www.linkedin.com/in/sanya-sharma-866805242/" target="_blank">
-            <button style="padding: 0.5rem 1rem; font-size: 1rem; border: none; background-color: #a94064; color: white; border-radius: 5px; cursor: pointer;">
-                🔗 Connect on LinkedIn
-            </button>
-        </a>
-    """, unsafe_allow_html=True)
 
 
 
 
 st.divider()
 
+
+
+
+
 st.subheader("🪄 About Me",anchor=False)
 st.markdown("""
-I'm **Sanya Sharma**, a Creative Technologist currently pursuing my **Master’s in Computer Applications**.  
-With a deep interest in design, storytelling, and tech, I love building experiences that are both beautiful and functional. From crafting **aesthetic websites** to exploring **data and AI**, I bridge the gap between logic and emotion through code.
-""")
+    I'm **Sanya Sharma**, a Creative Technologist currently pursuing my **Master’s in Computer Applications**. With a deep interest in design, storytelling, and tech, I love building experiences that are both beautiful and functional. From crafting **aesthetic websites** to exploring **data and AI**, I bridge the gap between logic and emotion through code.
+    """)
+
+
 
 st.divider()
 
@@ -137,7 +134,7 @@ st.markdown("""
 st.divider()
 
 
-st.markdown("### 💫 Wait up, There's more!")
+st.markdown("## 💫 Wait up, There's more!")
 
 sec1,sec2,sec3 = st.columns(3, vertical_alignment="center", gap="small")
 
@@ -156,6 +153,25 @@ with sec3:
 
     if st.button("Design"):
         st.switch_page("./views/design.py")
+
+st.divider()
+
+st.markdown("## 🌎 Socials: ")
+
+st.markdown("""
+<div style="display: flex; gap: 10px;">
+    <a href="https://www.linkedin.com/in/sanya-sharma-866805242/" target="_blank">
+        <button style="padding: 0.5rem 1rem; font-size: 1rem; border: none; background-color: #a94064; color: white; border-radius: 5px; cursor: pointer;">🔗 LinkedIn</button>
+    </a>
+    <a href="https://github.com/sanya-code" target="_blank">
+        <button style="padding: 0.5rem 1rem; font-size: 1rem; border: none; background-color: #a94064; color: white; border-radius: 5px; cursor: pointer;">🐈‍⬛ Github</button>
+    </a>
+    <a href="https://pin.it/6hGHskP0w" target="_blank">
+        <button style="padding: 0.5rem 1rem; font-size: 1rem; border: none; background-color: #a94064; color: white; border-radius: 5px; cursor: pointer;">🏮 Pinterest</button>
+    </a>
+            
+</div>
+""", unsafe_allow_html=True)
 
 
 
